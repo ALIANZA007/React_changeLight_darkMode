@@ -1,6 +1,4 @@
-import React from 'react'
 import './App.css'
-
 import React, { useEffect, useState } from 'react';
 
 const ThemeSwitch = () => {
@@ -8,6 +6,7 @@ const ThemeSwitch = () => {
   const [isPristine, setIsPristine] = useState(true);
 
   useEffect(() => {
+    // Initially set the switch state based on the user's preferred color scheme
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setIsChecked(true);
     }
@@ -111,3 +110,8 @@ const ThemeSwitch = () => {
 };
 
 export default ThemeSwitch;
+
+
+
+
+        	
